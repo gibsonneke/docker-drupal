@@ -116,7 +116,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+$settings['rebuild_access'] = FALSE;
 
 /**
  * Skip file system permissions hardening.
@@ -153,3 +153,22 @@ $settings['skip_permissions_hardening'] = TRUE;
  * the language or field module.
  */
 # $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
+
+$databases['default']['default'] = [
+    'database' => 'drupal',
+    'username' => 'user',
+    'password' => 'user',
+    'prefix' => '',
+    'host' => 'mariadb',
+    'port' => '3306',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+];
+
+/**
+ * Trusted host configuration.
+ *
+ * This will allow any domain and needs to be edited for use on production.
+ * 
+ */
+$settings['trusted_host_patterns'] = [ '.*' ];
