@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  httpd:
+    image: 'emmanuellibbrecht/alpine-3.15.0-httpd-2.4:latest'
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docker/httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf:cached
+      - ./docker/httpd/vhosts.conf:/usr/local/apache2/conf/vhosts.conf:cached
+      - ./:/usr/local/apache2/htdocs
+  mariadb:
+    image: 'mariadb:10.7.1'
+    environment:
+      MYSQL_DATABASE: drupal
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+  phpfpm:
+    image: 'emmanuellibbrecht/alpine-3.15.0-phpfpm-8.0:latest'
+    volumes:
+      - ./:/usr/local/apache2/htdocs
+  mailhog:
+    image: mailhog/mailhog
+    volumes:
+      - ./assets/smtp.json:/tmp/smtp.json:cached
+    environment:
+      - MH_OUTGOING_SMTP=/tmp/smtp.json
+    ports:
+      - "1025:1025"
+      - "8025:8025"
