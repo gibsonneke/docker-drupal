@@ -154,17 +154,6 @@ $settings['skip_permissions_hardening'] = TRUE;
  */
 # $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
 
-$databases['default']['default'] = [
-    'database' => 'drupal',
-    'username' => 'user',
-    'password' => 'user',
-    'prefix' => '',
-    'host' => 'mariadb',
-    'port' => '3306',
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-    'driver' => 'mysql',
-];
-
 /**
  * Trusted host configuration.
  *
