@@ -82,5 +82,13 @@
         "classmap": [
           "scripts/composer/ScriptHandler.php"
         ]
-    }
+    },
+    "scripts": {
+        "post-install-cmd": [
+          "sh ./scripts/composer/salt.sh"
+        ],
+        "post-update-cmd": [
+          "sh ./scripts/composer/salt.sh"
+        ]
+      }
 }
