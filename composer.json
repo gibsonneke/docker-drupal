@@ -82,15 +82,5 @@
         "classmap": [
           "scripts/composer/ScriptHandler.php"
         ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-          "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-          "sh ./scripts/composer/salt.sh"
-        ],
-        "post-update-cmd": [
-          "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-          "sh ./scripts/composer/salt.sh"
-        ]
-      }
+    }
 }
