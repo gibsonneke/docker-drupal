@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fecec56d627d001be2283fc843e7381",
+    "content-hash": "58d66fc5ce4ec6b8b7716bfc4b8eeec0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -779,16 +779,16 @@
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4"
+                "reference": "48d3bfac6d37b10c8ddae6e366ea79db5594d918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/117dcc9494dc970a6ae307103c41d654e6253bc4",
-                "reference": "117dcc9494dc970a6ae307103c41d654e6253bc4",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/48d3bfac6d37b10c8ddae6e366ea79db5594d918",
+                "reference": "48d3bfac6d37b10c8ddae6e366ea79db5594d918",
                 "shasum": ""
             },
             "require": {
@@ -828,9 +828,9 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.0.3"
+                "source": "https://github.com/consolidation/self-update/tree/2.0.4"
             },
-            "time": "2021-12-30T19:08:32+00:00"
+            "time": "2022-02-08T16:22:44+00:00"
         },
         {
             "name": "consolidation/site-alias",
@@ -1504,56 +1504,6 @@
             "time": "2022-02-04T20:00:20+00:00"
         },
         {
-            "name": "drupal/core-composer-scaffold",
-            "version": "9.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "d3e0b1d707125c5de0f54315906e65654c3608da"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/d3e0b1d707125c5de0f54315906e65654c3608da",
-                "reference": "d3e0b1d707125c5de0f54315906e65654c3608da",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1 || ^2",
-                "php": ">=7.3.0"
-            },
-            "conflict": {
-                "drupal-composer/drupal-scaffold": "*"
-            },
-            "require-dev": {
-                "composer/composer": "^1.8@stable"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Composer\\Plugin\\Scaffold\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "A flexible Composer project scaffold builder.",
-            "homepage": "https://www.drupal.org/project/drupal",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.5"
-            },
-            "time": "2021-11-19T09:52:23+00:00"
-        },
-        {
             "name": "drupal/core-project-message",
             "version": "9.3.5",
             "source": {
@@ -1723,16 +1673,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "11.0.4",
+            "version": "11.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "94707767c12dd2282556089f08b599512f4d1050"
+                "reference": "dce2da2806961827662384058b460cc432fa24df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/94707767c12dd2282556089f08b599512f4d1050",
-                "reference": "94707767c12dd2282556089f08b599512f4d1050",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/dce2da2806961827662384058b460cc432fa24df",
+                "reference": "dce2da2806961827662384058b460cc432fa24df",
                 "shasum": ""
             },
             "require": {
@@ -1858,7 +1808,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/11.0.4"
+                "source": "https://github.com/drush-ops/drush/tree/11.0.5"
             },
             "funding": [
                 {
@@ -1866,7 +1816,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-25T14:02:58+00:00"
+            "time": "2022-02-08T14:17:13+00:00"
         },
         {
             "name": "egulias/email-validator",
