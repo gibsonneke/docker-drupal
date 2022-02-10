@@ -161,3 +161,12 @@ $settings['skip_permissions_hardening'] = TRUE;
  * 
  */
 $settings['trusted_host_patterns'] = [ '.*' ];
+
+/**
+ * Memcache configuration.
+ *
+ */
+$settings['memcache']['servers'] = ['memcache:11211' => 'default'];
+$settings['memcache']['bins'] = ['default' => 'default'];
+$settings['memcache']['key_prefix'] = '';
+$settings['cache']['default'] = 'cache.backend.memcache';
